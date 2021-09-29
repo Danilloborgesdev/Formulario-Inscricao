@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Título que aparece na aba -->
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <!-- Cabeçalho com título e subtítulo -->
+    <div>
+        <h1 id="titulo">Encontro de Juvenis Videira Bueno</h1>
+        <br>
+        <p id="subtitulo">FICHA DE INSCRIÇÃO - Data do Encontro 15/08/2021</p>
+    
+    </div>
+      <br>
+      <br>
+
+      <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">      
+            <legend>Dados do Juvenil</legend>
+            <br>
+
+            <!-- Campo dos dados- Elementos:
+                (Placeholder) é utilizado para indicar ao navegador o texto que deverá aparecer escrito no campo do formulário.
+                (autocomplete="off") faz habilitar ou desabilitar o autopreenchimento auto dos elementos form e input.
+                (required) obriga o usuário a inserir dados naquele campo antes de enviar o formulário.-->
+
+            <div class="campo1">
+                <label><strong>Nome Completo:</strong></label>
+                <input type="text" name="nome" class="caixa-texto" size="50" required placeholder="Digite aqui" autocomplete="off">
+            </div>
+            <br>
+
+           
+            <div class="campo1">
+                <label><strong>Data de Nascimento:</strong></label>
+                <input type="date" class="caixa-texto" placeholder="Ex.: dd/mm/aaaa" autocomplete="off">
+            </div>
+            <br>
+            <div class="campo1">
+                <label><strong>Nome da Mãe:</strong></label>
+                <input type="text" name="nome da mãe" class="caixa-texto" size="50" required placeholder="Ex: nome da mãe..." autocomplete="off">
+            </div>
+            <br>
+            <div class="campo1">
+                <label><strong>Nome do Pai:</strong></label>
+                <input type="text" name="nome da pai" class="caixa-texto" size="50" placeholder="Ex: nome do pai..." autocomplete="off">
+            </div>
+            <br>
+            <div class="campo1">
+                <label><strong>RG do Responsável:</strong></label>
+                <input type="number" name="RG" class="caixa-texto" placeholder="RG"> 
+            </div>
+            <br>
+            <div class="campo1">
+                <label><strong>Endereço:</strong></label>
+                <input type="text" name="endereço" class="caixa-texto" size="50" placeholder="Ex: Rua...Qd e Lt" autocomplete="off">
+            </div>
+            <br>
+            <div class="campo1">
+                <label><strong>Telefone do Responsável:</strong></label>
+                <input type="tel" name="telefone" class="caixa-texto" required placeholder="Ex.: (00) 9 0000-0000" autocomplete="off">
+            </div>
+            <br>
+            
+
+        </fieldset>
+        <br>
+
+         <!-- fieldset é usado para agrupar elementos, dentro de um formulário web -->
+        <fieldset class="grupo1">
+            <legend>Dados da Líder</legend>
+            <br>
+            <div class="campo1">
+                <Label><strong>Pastora de Rede:</strong></Label>
+                <label>
+                    <input type="radio" name="Rede" value="Dione" checked> Dione
+                </label>
+
+                <label>
+                    <input type="radio" name="Rede" value="Alexandra"> Alexandra
+                </label>
+
+                <label>
+                    <input type="radio" name="Rede" value="Raniell"> Raniell
+                </label>
+
+                <label>
+                    <input type="radio" name="Rede" value="Leandra"> Leandra
+                </label>
+            </div>
+            <br>
+            
+            <div class="campo1">
+                <label><strong>Líder de Célula:</strong></label>
+                <input type="text" name="nome" class="caixa-texto" size="50" required placeholder="Digite aqui"
+                    autocomplete="off">
+            </div><br>
+            <div class="campo1">
+                <label><strong>Discipuladora:</strong></label>
+                <input type="text" name="nome" class="caixa-texto" size="50" required placeholder="Digite aqui"
+                    autocomplete="off">
+            </div><br>
+
+            <div class="campo1">
+                <label><strong>Qual Discipulado:</strong></label>
+
+                <!-- Um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento <option>  -->
+                <select class="caixa-texto">
+                    <option value="">Selecionar</option>
+                    <option>Daiane Borges</option>
+                    <option>Erika Silva</option>
+                    <option>Eliete Fraga</option>
+                    <option>Marcia Silva</option>
+                    <option>Marilia Pedroza</option>          
+                </select>
+            </div>
+
+        </fieldset>
+        <br>
+        <br>
+        <button class="botao" type="submit" value="enviar" >Concluído</button>
+       
+        <br>
+
+    </form>
+
+
+</body>
+
+</html>

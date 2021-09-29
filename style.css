@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#titulo {
+    font-family: sans-serif;
+    color: #380b61;
+    margin-left: 2%;
+}
+#subtitulo {
+    font-family: sans-serif;
+    font-weight: bolder; /* font-weight especifica o peso ou a intensidade da fonte (ex.: negrito)*/
+    color: #380b61;
+    margin-left: 12%;
+}
+.grupo1 {
+    display: inline-block;
+}
+
+fieldset {
+    border: 0;
+}
+body {
+    background-color: #f0f8ff;
+    font-family: sans-serif;
+    font-size: 19px;
+    color: #59429d;
+    margin-left: 30%;
+    margin-top: 1%;
+    justify-content: center;
+}
+input, select, button {
+    border-radius: 5px;
+}
+.campo1 {
+    margin-bottom: 2px;
+}
+.campo1 label option {
+    margin-bottom: 2px;
+    color: #59429d;
+    display: inline-block;
+}
+legend {
+    font-family: sans-serif;
+    font-size: 19px;
+    color: #380b61;
+    font-weight: bolder;
+}
+
+.caixa-texto:hover {
+    background-color:linen;
+}
+
+fieldset .campo1 .grupo {
+    float: left;
+    margin-right: 2px;
+}
+.campo1 input[type="text"], .campo1 input[type="number"],
+.campo1 input[type="date"], .campo1 input[type="tel"], option, .caixa-texto {
+    padding: 2px;
+    border: 1px solid #59429d;
+    box-shadow: 3px 3px 3px rgba(-9, -9, -9, 0.2);
+    display: inline-flexbox;
+}
+.campo1 input[type="radio"] {
+    margin: 3px;
+}
+.campo1, select, option {
+    padding-right: 2px;
+}
+/* O elemento :focus preenche o fundo como fosse um background */
+.campo1 input:focus, .campo1 select:focus {
+    background: #e0e0f8;
+}
+
+
+.botao {
+    font-size: 1.8em;
+    background: #59429d;
+    border: 1px;
+    margin-bottom: 8px; color: #ffffff;
+    padding: 1px 6px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /*O elemento box-shadow é para colocar sombras nos elementos/caixa */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 15px;
+    left: 35%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); /*Isso faz com que o elemento se desloque tanto para cima (Y negativo) 
+    quanto para esquerda (X negativo) serve basicamente para posicionar elementos*/
+}
+.botao:hover {
+    background: #8b78c4;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.botao, select {
+    cursor: pointer; /* Muda o ponteiro do Cursor para Mãozinha */
+}
+
